@@ -36,4 +36,9 @@ public class CastController {
 	public Casting find(@PathVariable long id) {
 		return castService.find(id);
 	}
+
+	@GetMapping("/test")
+	public String test(){
+		return "Returning TEST from CAST service.";
+	}
 }
